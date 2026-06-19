@@ -464,6 +464,20 @@ public final class PlayerHelper {
                 player.getContext().getString(R.string.seek_duration_default_value))));
     }
 
+    /**
+     * Whether media button next/previous should seek within the current track
+     * instead of skipping to the next/previous track.
+     * @param context the context used to read the preference
+     * @return true if media buttons should seek, false to skip tracks
+     */
+    public static boolean shouldMediaButtonsSeek(final Context context) {
+        final String key = context.getString(R.string.media_button_action_key);
+        final String defValue = context.getString(R.string.media_button_action_default);
+        return context.getString(R.string.media_button_action_seek_key)
+                .equals(PreferenceManager.getDefaultSharedPreferences(context)
+                        .getString(key, defValue));
+    }
+
     // endregion
     // region Format
 
