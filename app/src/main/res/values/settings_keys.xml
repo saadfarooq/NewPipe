@@ -28,6 +28,19 @@
     <string name="clear_queue_confirmation_key">clear_queue_confirmation_key</string>
     <string name="ignore_hardware_media_buttons_key">ignore_hardware_media_buttons_key</string>
 
+    <string name="media_button_action_key">media_button_action</string>
+    <string name="media_button_action_default">@string/media_button_action_skip_tracks_key</string>
+    <string name="media_button_action_skip_tracks_key">skip_tracks</string>
+    <string name="media_button_action_seek_key">seek</string>
+    <string-array name="media_button_action_values">
+        <item>@string/media_button_action_skip_tracks_key</item>
+        <item>@string/media_button_action_seek_key</item>
+    </string-array>
+    <string-array name="media_button_action_descriptions">
+        <item>@string/media_button_skip_tracks</item>
+        <item>@string/media_button_seek</item>
+    </string-array>
+
     <string name="popup_saved_width_key">popup_saved_width</string>
     <string name="popup_saved_x_key">popup_saved_x</string>
     <string name="popup_saved_y_key">popup_saved_y</string>
